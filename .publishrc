@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Deploing to gh-pages: https://kr1an.github.io/rc-youtube-api"
+mv .gitignore .gitignore.silent-mode
+echo "node_modules" >> .gitignore
+echo "webpack.*" >> .gitignore
+npm run bundle
+git init
+git add .
+git commit -m "youtube/feature: push to remote repo"
+git remote add gh-origin https://github.com/Kr1an/rc-youtube-api.git
+git push gh-origin master -u -f
+rm -rf .git
+rm .gitignore
+mv .gitignore.silent-mode .gitignore
+
+

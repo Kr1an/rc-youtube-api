@@ -1,0 +1,49 @@
+.result-container {
+  height: 90vh;
+  background: white;
+  .result-list {
+    height:80vh;
+    max-height:80vh;
+  }
+  .result-navigation {
+    height: 9.5vh;
+    max-height: 10vh;
+  }
+  .separator {
+    height: 0.5vh;
+    &:hover {
+      background:#C12127;
+      // height: 3vh;
+    }
+    &:active {
+      background:#C12127;
+      // height: 3vh;
+    }
+  }
+}
+
+.swipe-rigth {
+  position: relative;
+  animation: _swipe_right 0.5s;
+}
+.swipe-left {
+  position:relative;
+  animation: _swipe_left 0.5s
+}
+
+@keyframes _swipe_left {
+  0% {
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes _swipe_right {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}

@@ -1,0 +1,43 @@
+.result-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    margin: 0 5%;
+    background: transparent;
+    border: none;
+    border-top:0px solid gray;
+    opacity: 0.8;
+    border-right:0px solid gray;
+    border-bottom:10px solid gray;
+    border-left:10px solid gray;
+    border-width:0px 0px 10px 10px;
+    border-style:solid solid solid solid;
+    border-color:gray gray gray gray;
+    width: 3vh;
+    height: 3vh;
+    transform: rotate(45deg);
+    &:hover {
+      border-color:#C12127;
+    }
+    &:focus {
+      outline: none;
+    }
+
+
+
+  }
+}
+#left-arrow {
+  transform: rotate(225deg)
+}
+@media only screen and (max-width: 800px) {
+  .result-navigation {
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .result-navigation {
+    justify-content: center;
+  }
+}
